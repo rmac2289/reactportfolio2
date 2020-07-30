@@ -11,6 +11,7 @@ import best from '../images/best-project-of-the-week.png';
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import expensify from '../images/Untitled.png';
+import pitchvid from './expensify.mp4';
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
@@ -45,7 +46,7 @@ export default function Pitch(){
                 </div>
                 <div className="media-container">
                     <video id="media" width="500" height="300" controls >
-                        <source src="" type="video/mp4"/>
+                        <source src={pitchvid} type="video/mp4"/>
                     </video>
                 </div>
             </div>
