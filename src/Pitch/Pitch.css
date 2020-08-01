@@ -162,6 +162,7 @@ background-size: cover;
     margin-top: 25px;
     height: 60px;
     width: 200px;
+    border-radius: 10px;
 }
 #js {
     background-color: #323330;

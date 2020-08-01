@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faNode, faJsSquare, faHtml5, faCss3Alt, faGitSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTerminal } from '@fortawesome/free-solid-svg-icons';
 import '../index.css';
-import best from '../images/best-project-of-the-week.png';
+import best from '../images/projectofmonth.png';
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import expensify from '../images/Untitled.png';
@@ -58,7 +58,7 @@ export default function Pitch(){
                     <div className="pitch-header-p-box-2">
                     <h3 className="pitch-header-2"><a className="pitch-header-2" href="https://findyourpark.netlify.app" target="_blank" rel="noopener noreferrer">Featured Project</a></h3>
                     <div className="pitch-p-2">Find Your Park, a full-stack app built using Node.js, React, and PostgreSQL, was recently
-                    featured as a project of the week on careerkarma.com. Search for California parks by name,
+                    featured as a project of the month on careerkarma.com. Search for California parks by name,
                     activities offered, or by selecting off the interactive map. Sign up for an account to leave
                     or read comments, or to suggest a park to be added. 
                     </div>

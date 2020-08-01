@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faNodeJs, faJs, faHtml5, faCss3, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core';
-import badge from '../images/best-project-of-the-week.png'
+import badge from '../images/projectofmonth.png'
 
 export default function Accordion() {
 
@@ -44,7 +44,7 @@ export default function Accordion() {
         </p>
         <p id="featured-span">
           <img id="badge" src={badge} alt="badge"/>
-          <a id="badge-link" href="https://careerkarma.com/blog/projects-spotlight-7-24-2020/" target="_blank" rel="noopener noreferrer">Featured as a project of the week on careerkarma.com.</a>
+          <a id="badge-link" href="https://careerkarma.com/blog/projects-spotlight-7-24-2020/" target="_blank" rel="noopener noreferrer">Featured as a project of the month on careerkarma.com.</a>
           </p>
           </div>
         <FontAwesomeIcon className="accordion-icon" icon={!oneIsOpen ? faChevronDown : faChevronUp} />
