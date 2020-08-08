@@ -62,13 +62,11 @@ class Contact extends Component {
           <section id="contactSection">
             <h1 className="p-heading1">contact me</h1>
             <div className="contact-options-box">
-            <h5>Find me on</h5>
             <ul className="contact-options">
               <li className="contact-option"><a href="https://www.linkedin.com/in/rsmacdonald/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="contact-icon" icon={faLinkedin}/>LinkedIn</a></li>
               <li className="contact-option"><a href="https://www.github.com/rmac2289" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="contact-icon" icon={faGithub}/>GitHub</a></li>
               <li className="contact-option"><a href="mailto:rmac2289@gmail.com"><FontAwesomeIcon className="contact-icon" icon={faEnvelope}/>Email</a></li>
             </ul>
-            <h5>or leave a message with the form below.</h5>
             </div>
             <Form id="form" onSubmit={this.handleSubmit.bind(this)}>
               <FormGroup className="formGroup" controlid="formBasicEmail">
@@ -80,7 +78,7 @@ class Contact extends Component {
                   value={this.state.email}
                   onChange={this.handleChange.bind(this, 'email')}
                   className="text-primary"
-                  placeholder="abc123@email.com"
+                  placeholder="recruiter@successfulcompany.com"
                 />
               </FormGroup>
   <FormGroup className="formGroup" controlid="formBasicName">
@@ -104,7 +102,7 @@ class Contact extends Component {
                   className="text-primary"
                   onChange={this.handleChange.bind(this, 'message')}
                   value={this.state.message}
-                  placeholder="Wow, what a beautiful website!"
+                  placeholder="Top-notch portfolio, I'd like to hire you immediately."
                 />
               </FormGroup>
               {this.state.success}

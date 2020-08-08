@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Meal from '../Projects/Meal';
 import Hearsay from '../Projects/Hearsay';
 import picnic from '../images/picnic.png'
@@ -12,15 +12,26 @@ import { faReact, faNodeJs, faJs, faHtml5, faCss3, faGitAlt } from '@fortawesome
 import '@fortawesome/fontawesome-svg-core';
 import badge from '../images/projectofmonth.png'
 
+const scrollToRef = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop - 20, behavior: "smooth"});
+const scrollToHearsay = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: "smooth"});
+const scrollToMeal = (ref) => window.scrollTo({left: 0, top: ref.current.offsetTop, behavior: "smooth"})
+
 export default function Accordion() {
+  const parkRef = useRef(null);
+  const hearsayRef = useRef(null);
+  const mealRef = useRef(null);
+
+   const parkScroll = () => scrollToRef(parkRef);
+   const hearsayScroll = () => scrollToHearsay(hearsayRef);
+   const mealScroll = () => scrollToMeal(mealRef);
 
   const [oneIsOpen, setOneIsOpen] = useState(false);
   const [twoIsOpen, setTwoIsOpen] = useState(false);
   const [threeIsOpen, setThreeIsOpen] = useState(false);
 
-  const toggleOne = () => setOneIsOpen(!oneIsOpen)
-  const toggleTwo = () => setTwoIsOpen(!twoIsOpen)
-  const toggleThree = () => setThreeIsOpen(!threeIsOpen)
+  const toggleOne = () => { setOneIsOpen(!oneIsOpen); !oneIsOpen && parkScroll()};
+  const toggleTwo = () => { setTwoIsOpen(!twoIsOpen); !twoIsOpen && hearsayScroll()};
+  const toggleThree = () => { setThreeIsOpen(!threeIsOpen); !threeIsOpen && mealScroll()};
  
   return (
     <div className="accordion-container">
@@ -52,6 +63,7 @@ export default function Accordion() {
       {oneIsOpen && <div className="accordion-1">
         <Parkfinder />
       </div>}
+      <div ref={parkRef}></div>
       <div className="accordion-button" onClick={toggleTwo}>
         <div className="accordion-title"><img id="bullhorn" src={bullhorn} alt="bullhorn icon" />hearsay</div>
         <div className="icon-container">
@@ -74,7 +86,8 @@ export default function Accordion() {
       {twoIsOpen && <div className="accordion-2">
         <Hearsay />
       </div>}
-      <div className="accordion-button" onClick={toggleThree}>
+      <div ref={hearsayRef}></div>
+      <div  className="accordion-button" onClick={toggleThree}>
         <div className="accordion-title"><img id="food" src={food} alt="food icon"/>meal generator</div>
         <div className="icon-container">
           <FontAwesomeIcon className="tech-icon" icon={faJs} />
@@ -94,7 +107,7 @@ export default function Accordion() {
       {threeIsOpen && <div className="accordion-3">
         <Meal />
       </div>}
-
+      <div style={{visibility: "hidden", marginTop: 150}} ref={mealRef} >hidden</div>
     </div>
   )
 }
