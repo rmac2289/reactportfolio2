@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import Nav from '../Nav/Nav'
 import Burger from '../Burger/Burger'
-
+import me from '../images/aboutme.jpg';
 
 export default function About(){
     return (
@@ -11,6 +11,11 @@ export default function About(){
         <main>
         <Burger id="burger"/>
         <Nav id="nav"/>
+        <div className="about-box">
+            <div className="portrait-box">
+                <img id="portrait" src={me} alt="portrait"/>
+            </div>
+
         <div className="beforesection1">
         <section className="section1">
                 <h4>about me</h4>
@@ -27,6 +32,7 @@ export default function About(){
                 <span id="corona">**Before Corona. I now enjoy spending lots and lots of time at home with my fiancé Nicole and our cat Holly.</span>
                 </p>
             </section>
+        </div>
         </div>
         </main>
         </div>

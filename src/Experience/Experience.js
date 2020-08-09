@@ -32,7 +32,7 @@ export default function Experience(){
         <main>
         <Burger id="burger"/>
         <Nav id="nav"/>
-        <div className="beforesection1">
+        <div style={{width: "100%", paddingLeft: "initial"}} className="beforesection1">
             <section className="section2">
                 <h4>experience</h4>
                 <p>
