@@ -14,11 +14,12 @@ import { withStyles } from '@material-ui/core/styles';
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
-        border: '1px solid black',
+        border: '1px solid #31708e',
       backgroundColor: theme.palette.common.white,
-      color: 'rgba(0, 0, 0, 0.87)',
+      color: '#31708e',
       boxShadow: theme.shadows[1],
-      fontSize: 11,
+      fontFamily: "Quattrocento",
+      fontSize: 14,
       margin: 0,
       fontWeight: 900,
     },
@@ -50,7 +51,7 @@ export default function Experience(){
                 </p>
                 <h4>tech I've worked with</h4>
                 <ul className="techlist">
-                    <LightTooltip title="React" TransitionProps={{ timeout: 650 }} placement="top" arrow>
+                    <LightTooltip title="React / React Native" TransitionProps={{ timeout: 650 }} placement="top" arrow>
                     <li className="tech"><FontAwesomeIcon icon={faReact} size="2x"/></li>
                     </LightTooltip>
                     <LightTooltip title="Node.js" TransitionProps={{ timeout: 650 }} placement="top" arrow>

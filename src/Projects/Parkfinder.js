@@ -12,7 +12,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import picnic from '../images/picnic.png';
-export default function Hearsay(){
+export default function ParkFinder(){
     return (
 <section className="section3">
             <div className="public">
@@ -47,19 +47,19 @@ export default function Hearsay(){
                 <img src={home} alt="app landing page"/>
                 </div>
                 <div>
-                <img src={comments} alt="ingredient menu"/>
+                <img src={comments} alt="comments page"/>
                 </div>
                 <div>
-                <img src={park} alt="meal list"/>
+                <img src={park} alt="park page"/>
                 </div>
                 <div>
-                <img src={parklist} alt="meal list"/>
+                <img src={parklist} alt="park list"/>
                 </div>
                 <div>
-                <img src={signup} alt="meal list"/>
+                <img src={signup} alt="signup page"/>
                 </div>
                 <div>
-                <img src={login} alt="meal list"/>
+                <img src={login} alt="login page"/>
                 </div>
             </Carousel>
             </div>
