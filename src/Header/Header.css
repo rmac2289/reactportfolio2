@@ -92,8 +92,6 @@ header {
     transform: translateY(0)
   }
 }
-
-
   .header-box {
     display: flex;
     flex-direction: column;
