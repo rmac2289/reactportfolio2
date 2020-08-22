@@ -2,21 +2,25 @@
     margin-right: 20px;
 }
 .section3, .section4 {
-    animation: test 1s linear;
+    animation: test .75s linear;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
 }
 @keyframes test {
     0% {
-        opacity: 0;
-        transform: translateY(-40px)
+        opacity: 0.3;
+        transform: scale(0.98) 
     }
 }
 .mealGenerator {
     justify-content: center;
     max-height: 100%;
     margin-top: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 11px 21px -8px rgba(0,0,0,0.7);
+
 }
 .main-border {
     padding-bottom: 50px;
