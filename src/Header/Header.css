@@ -60,6 +60,7 @@ header {
     font-size: 36px;
     color: #31708e;
     font-weight: 900;
+    cursor: pointer;
   }
   .arrow {
   position: absolute;
