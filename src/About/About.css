@@ -63,10 +63,13 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .tech {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 4em;
+    height: 80px;
+    width: 90px;
 }
 p {
     font-family: "Quattrocento", serif;
