@@ -21,6 +21,7 @@ import appStoreIcon from '../images/appstore96px.png'
 import angularIcon from '../images/angular96px.png'
 import pythonIcon from '../images/python96px.png'
 import cpanelIcon from '../images/cpanel96px.png'
+import graphql from '../images/graphql.svg'
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
@@ -111,6 +112,9 @@ export default function Experience(){
                     </LightTooltip>
                     <LightTooltip title="Angular" TransitionProps={{ timeout: 650 }} placement="top" arrow>
                     <li className="tech"><img className="tech-list-icon" src={angularIcon} alt="angular"/></li>
+                    </LightTooltip>
+                    <LightTooltip title="GraphQL" TransitionProps={{ timeout: 650 }} placement="top" arrow>
+                    <li className="tech"><img className="tech-list-icon" src={graphql} alt="angular"/></li>
                     </LightTooltip>
                 </ul>
             </section>
