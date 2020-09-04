@@ -26,14 +26,12 @@ export default function Nav() {
           </a>
         </li>
         <li>
-          <a
+          <Link
             id="resume"
-            href="https://ross-scott-macdonald.com/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            to="/resume"
           >
             resume
-          </a>
+          </Link>
         </li>
         <li>
           <Link className="contact" to="/contact">

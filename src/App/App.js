@@ -6,7 +6,7 @@ import Contact from "../Contact/Contact";
 import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Footer from "../Footer/Footer";
-// import Pitch from '../Pitch/Pitch';
+import Resume from '../Resume/Resume';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/experience" component={Experience} />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/contact" component={Contact} />
-        {/*<Route exact path="/expensify" component={Pitch} />*/}
+        <Route exact path="/resume" component={Resume} />
         <Route component={PageNotFound} />
       </Switch>
       <Footer />

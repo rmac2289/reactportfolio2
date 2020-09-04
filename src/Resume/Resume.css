@@ -1,0 +1,13 @@
+.resume-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+iframe {
+    height: 900px;
+    margin-top: 55px;
+    width: 100%;
+    margin-bottom: 50px;
+    border: none;
+}
