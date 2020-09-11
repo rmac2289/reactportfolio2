@@ -101,15 +101,24 @@ section h4 {
 }
 .projects-header {
     text-align: center;
-    background: #31708e;
-    color: white;
-    width: 100%;
+    position: relative;
+    color: rgb(64, 75, 62);
+    width: 60%;
     height: 150px;
     display: flex;
     align-items: center;
+    border-top: 1px solid rgb(64, 75, 62,0.4);
     justify-content: center;
-    background: linear-gradient(90deg, rgb(104, 120, 100,0.8), rgb(104, 120, 100,0.8) 15%, rgb(49, 112, 142,0.5) 15% 100%);
-  background-repeat: no-repeat;
+}
+.projects-header::before {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+    border-bottom: 1px solid rgb(64, 75, 62,0.4)
 }
 section {
     min-height: 200px;
