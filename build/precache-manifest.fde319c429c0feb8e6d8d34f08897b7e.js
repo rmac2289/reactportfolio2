@@ -1,35 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "885c7a4f788dd22201302907c2b06ba3",
+    "revision": "fdc6fb9603c54e4cd36f73213552b2b4",
     "url": "/index.html"
   },
   {
-    "revision": "172c41b7d8e0ed28f5a2",
+    "revision": "14d0104c653b778f7125",
     "url": "/static/css/2.00762ba3.chunk.css"
   },
   {
-    "revision": "4465886b333af4ed8564",
-    "url": "/static/css/main.37f50174.chunk.css"
+    "revision": "b2fac1bccee47a960e69",
+    "url": "/static/css/main.efa0b3f7.chunk.css"
   },
   {
-    "revision": "172c41b7d8e0ed28f5a2",
-    "url": "/static/js/2.49ac4d9e.chunk.js"
+    "revision": "14d0104c653b778f7125",
+    "url": "/static/js/2.cff5c1f6.chunk.js"
   },
   {
     "revision": "d01a1029bd1e6c83980ddf2b4918f6d4",
-    "url": "/static/js/2.49ac4d9e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.cff5c1f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4465886b333af4ed8564",
-    "url": "/static/js/main.b407d872.chunk.js"
+    "revision": "b2fac1bccee47a960e69",
+    "url": "/static/js/main.2e7eb4c8.chunk.js"
   },
   {
     "revision": "dd0ad302ca727c93b192",
     "url": "/static/js/runtime-main.4e7c19c6.js"
-  },
-  {
-    "revision": "0177a10ef48139cabce6257df6326ab3",
-    "url": "/static/media/Ross_MacDonald_Resume.0177a10e.pdf"
   },
   {
     "revision": "0e8431addf61fd8db73413449d99e9e9",
@@ -118,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fc2c298e7a9ce6e5997712973b9facd8",
     "url": "/static/media/projectofmonth.fc2c298e.png"
+  },
+  {
+    "revision": "5e2300fee73bb4d6ac6c6532d2fd1284",
+    "url": "/static/media/resume91020.5e2300fe.pdf"
   },
   {
     "revision": "71d86335d4c37eec18119a38c11afa3f",
