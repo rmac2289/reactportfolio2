@@ -7,14 +7,13 @@ export default function Header() {
   return (
     <header role="banner">
       <div className="header-box">
-        <h1 className="header">ROSS MACDONALD</h1>
+        <h1 className="header"></h1>
         <h2 className="header">
-          full stack web developer in the Portland metro area
         </h2>
         <div className="arrow">
           <h4
             className="latest-work"
-            onClick={() => window.scrollTo({ top: 700, behavior: "smooth" })}
+            onClick={() => window.scrollTo({ top: 900, behavior: "smooth" })}
           >
             my latest work
           </h4>

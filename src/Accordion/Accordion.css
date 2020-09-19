@@ -33,9 +33,7 @@
     margin-right: auto;
     padding-top: 0;
     border-radius: 5px;
-}
-#badge-link {
-    color: #31708e;
+    background-color: white;
 }
 
 .collapsed {
@@ -54,10 +52,9 @@
   0 12.3px 7.9px rgba(0, 0, 0, 0.072),
   0 21.8px 13.4px rgba(0, 0, 0, 0.086),
   0 50px 30px rgba(0, 0, 0, 0.12);
-    background: #687864;
-    border-left:8px solid #31708e;
+    background: white;
     border-bottom-left-radius: 0;
-    color: #f7f9fb;
+    color: black;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -65,9 +62,11 @@
     padding-left: 15px;
     padding-right: 15px;
     cursor: pointer;
+    border: 3px solid black;
     transition: .5s all linear;
-    
-
+}
+.accordion-button:first-child{
+    margin-top:0;
 }
 .tech-icon {
     margin-right: 10px;
@@ -80,11 +79,12 @@
     align-self: center;
 }
 .accordion-button:hover {
-    background-color: #404b3e;
+    background-color: black;
+    color: white;
 }
 
 .accordion-icon{
-    color: #31708e;
+    color: white;
     margin-right: 10px;
 }
 .accordion-sub-title {
@@ -93,8 +93,8 @@
     align-items: center;
     margin-top: 0;
     width: 100%;
-    background: #f7f9fb;
-    border-left: 8px solid #31708e;
+    background: black;
+    border: 3px solid black;
     cursor: pointer;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -111,7 +111,7 @@
     padding: 2%;
     margin-bottom: 0;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 .btn-link:hover, .btn:hover {
     text-decoration: none !important;
@@ -128,13 +128,13 @@
     #featured-span {
         flex-direction: row;
         align-items: center;
-        background-color: #31708ecc;
+        background-color: white;
         margin-top: 10px;
         padding: 1%;
 
     }
     #badge-link {
-        color: white;
+        color: black;
     }
     #badge {
         margin-right:10px
