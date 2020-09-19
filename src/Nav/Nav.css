@@ -39,7 +39,7 @@ nav {
   
   nav ul li a:hover, .about:hover, .projects-link:hover, .contact:hover {
     text-decoration: none;
-    color: #5085A5 !important;
+    color: grey !important;
     cursor: pointer;
   }
   @media only screen and (min-width: 520px){
