@@ -4,6 +4,12 @@
     flex-direction: column;
     justify-content: center;
 }
+#contactID {
+    background: url('../images/smallMountains.png');
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
 #contactSection {
     padding-top: 50px;
 }

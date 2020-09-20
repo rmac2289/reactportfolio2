@@ -5,15 +5,15 @@ import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <header role="banner">
+    <header className="banner" role="banner">
       <div className="header-box">
-        <h1 className="header"></h1>
-        <h2 className="header">
+        <h1 className="header"><strong>Ross</strong><br/> MacDonald</h1>
+        <h2 className="sub-header">full stack web developer
         </h2>
         <div className="arrow">
           <h4
             className="latest-work"
-            onClick={() => window.scrollTo({ top: 900, behavior: "smooth" })}
+            onClick={() => window.scrollTo({ top: 1100, behavior: "smooth" })}
           >
             my latest work
           </h4>

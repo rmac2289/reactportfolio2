@@ -1,11 +1,11 @@
 nav {
     padding: 1% 0;
     color: white;
-    height: 60px;
+    height: 80px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     display: none !important;
     z-index: 10;
     background: black;
@@ -15,16 +15,14 @@ nav {
   
   nav ul {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
     list-style: none;
     align-items: center;
-    font-size: 1.3em
+    font-size: 1.3em;
   }
-  
-  nav ul li {
-    margin-right: 30px;
-  }
-  
   nav ul li a, .about, .projects-link, .contact {
     text-decoration: none !important;
     color: white;
@@ -41,18 +39,37 @@ nav {
     text-decoration: none;
     color: grey !important;
     cursor: pointer;
+    letter-spacing: .08em;
   }
   @media only screen and (min-width: 520px){
     nav ul li a, .about, .projects-link, .contact{
       font-size: .8em;
     }
+    
   }
   @media only screen and (min-width: 720px) {
     nav ul li a, .about, .projects-link, .contact {
-      font-size: 20px;
+      font-size: 22px;
+      font-weight: 900;
     }
     nav {
-      display: block !important;
+      display: flex !important;
+      align-items: center;
+    }
+    .links {
+      margin-bottom: 0;
+      width: 70%;
+      margin-right: 0;
+      margin-left: auto;
+    }
+    
+    nav {
+      display: flex;
+    }
+  }
+  @media only screen and (min-width:900px){
+    .links {
+      width: 55%;
     }
   }
   

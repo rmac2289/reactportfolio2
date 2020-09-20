@@ -6,7 +6,7 @@ import me from "../images/aboutme.jpg";
 
 export default function About() {
   return (
-    <div className="App">
+    <div className="App about-page">
       <div id="body">
         <main>
           <Burger id="burger" />

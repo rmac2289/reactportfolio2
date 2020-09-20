@@ -1,15 +1,26 @@
 header {
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
     margin-right: 20px;
     min-height: 200px;
   background: none;
+  }
+  .banner {
+    margin-top: 50px;
+  }
+  .header {
+    font-size: 35px;
+    margin-bottom: 15px;
+    letter-spacing: .07em;
   }
   .latest-work {
     font-size: 36px;
     color: black;
     font-weight: 900;
     cursor: pointer;
+  }
+  .sub-header {
+    font-size: 18px;
   }
   .arrow {
   display: none;
@@ -37,42 +48,29 @@ header {
  
 
   @media only screen and (min-width: 520px){
+    .banner {
+      margin-top: 100px;
+      margin-left: 30px;
+    }
+    .header {
+      font-size: 50px;
+      margin-bottom: 15px
+    }
+    .sub-header {
+      font-size: 28px;
+    }
    header {
      margin-top: 60px;
      min-height: 400px;
    }
     
     .arrow {
-      top: 350px;
+      animation: 2s arrow linear
     }
-    @keyframes random {
+    @keyframes arrow {
       0% {
-        transform: skewX(0)
-      }
-      25% {
-        
-        transform: skew(35deg, 5deg) translateX(20px)
-      }
-      50% {
-        transform: skewX(-15deg)
-      }
-      75% {
-        transform: skew(25deg,-5deg)
-      }
-    }
-    @keyframes random2 {
-      0% {
-        transform: skewX(5deg)
-      }
-      25% {
-        
-        transform: skew(45deg, -3deg) translateX(-20px)
-      }
-      50% {
-        transform: skewX(10deg)
-      }
-      75% {
-        transform: skew(15deg,5deg)
+        opacity: 0;
+        transform: scale(.9,.9)
       }
     }
 
@@ -82,9 +80,23 @@ header {
     header {
       min-height: 600px;
     }
+    
+    .header-box {
+      margin-left: 30px;
+      margin-top: 175px;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      font-size: 60px;
+    }
+    .sub-header {
+      font-size: 32px;
+      margin-left: 80px;
+    }
     .arrow {
       position: absolute;
-  top: 80px;
+  top: 100px;
   left: 30px;
   width: 250px;
   height:125px;
@@ -96,14 +108,36 @@ header {
   box-shadow: 0px 21px 11px -16px rgb(0,0,0,0.4),
   10px 0px 16px 0px rgb(0,0,0,0.4);
     }
+    .latest-work {
+      color:rgb(214, 23, 23);
+    }
+  }
+  @media only screen and (min-width: 800px){
+    .sub-header{
+      margin-top: 40px;
+      font-size: 36px;
+    }
+    .header {
+      font-size: 72px;
+      margin-top: 50px;
+    }
   }
   @media only screen and (min-width: 1024px){
-    
+    .banner {
+      margin-left: 100px;
+    }
     header {
       min-height: 800px;
     }
     .arrow {
       left: 100px;
       top: 100px;
+    }
+    .sub-header{
+      font-size: 38px;
+    }
+    .header {
+      font-size: 76px;
+      margin-top: 50px;
     }
   }

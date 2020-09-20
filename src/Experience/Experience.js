@@ -25,9 +25,9 @@ import graphql from "../images/graphql.svg";
 
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
-    border: "1px solid #31708e",
+    border: "1px solid black",
     backgroundColor: theme.palette.common.white,
-    color: "#31708e",
+    color: "black",
     boxShadow: theme.shadows[1],
     fontFamily: "Quattrocento",
     fontSize: 14,
@@ -38,7 +38,7 @@ const LightTooltip = withStyles((theme) => ({
 
 export default function Experience() {
   return (
-    <div className="App">
+    <div className="App experience-page">
       <div id="body">
         <main>
           <Burger id="burger" />

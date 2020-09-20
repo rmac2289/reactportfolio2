@@ -5,7 +5,7 @@
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  background: url('./leftside.png'), url('./mountainbottom.png');
+  background: url('../images/mountainNoText.png'), url('./mountainbottom.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top, bottom;
