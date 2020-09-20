@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <header className="banner" role="banner">
       <div className="header-box">
-        <h1 className="header"><strong>Ross</strong><br/> MacDonald</h1>
-        <h2 className="sub-header">full stack web developer
+        <h1 className="header"><strong style={{color: "red"}}>Ross</strong><br/> MacDonald</h1>
+        <h2 className="sub-header">full-stack web developer
         </h2>
         <div className="arrow">
           <h4

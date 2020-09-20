@@ -8,7 +8,7 @@
     margin-right: auto;
 }
 .body {
-    font-family: "Oswald", sans-serif;
+    font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   display: flex;
@@ -35,7 +35,7 @@
 }
 
 p {
-    font-family: "Quattrocento", serif;
+    font-family: 'Karla', sans-serif;
     padding: 20px;
     line-height: 1.5em;
 }
@@ -58,7 +58,7 @@ p {
     width: 100%;
     position: absolute;
     top: 300px;
-    background: url('./lines.png');
+    background: url('../images/linebreak.png');
         background-repeat: no-repeat;
         background-size: contain;
 }
@@ -69,7 +69,7 @@ p {
 }
 .repoLinks {
     color: black;
-    font-family: "Oswald", sans-serif;
+    font-family: "Rubik", sans-serif;
     text-decoration: none;
     font-size: 25px;
     transition-property: all;
@@ -87,7 +87,7 @@ p {
 
 .public h3 {
     font-size: 35px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Rubik", sans-serif;
     color: black;
     margin-left: 25px;
 }
@@ -108,10 +108,8 @@ section h4 {
     text-align: left;
     font-size: 2em;
     padding-bottom: 15px;
-    letter-spacing: 2.5px;
     width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 20px;
 }
 .projects-header {
     text-align: center;
