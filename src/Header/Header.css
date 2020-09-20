@@ -65,7 +65,7 @@ header {
    }
     
     .arrow {
-      animation: 2s arrow linear
+      animation: 1s arrow linear
     }
     @keyframes arrow {
       0% {
@@ -130,7 +130,7 @@ header {
     }
     .arrow {
       left: 100px;
-      top: 100px;
+      top: 110px;
     }
     .banner {
       margin-left: 40px;
