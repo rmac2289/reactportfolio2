@@ -21,7 +21,7 @@ section {
     display: none
 }
 .App {
-    animation: slideUp .3s ease;
+    animation: slideUp .6s ease;
 }
 @keyframes slideUp {
     0% {
