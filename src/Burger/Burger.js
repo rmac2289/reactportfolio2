@@ -197,7 +197,7 @@ class Menu extends React.Component {
         position: "absolute",
         top: "15px",
         left: 0,
-        height: this.state.open ? "60%" : 0,
+        height: this.state.open ? "350px" : 0,
         width: "100vw",
         display: "flex",
         flexDirection: "column",
