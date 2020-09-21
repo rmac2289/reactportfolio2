@@ -38,7 +38,7 @@ nav {
     text-decoration: none;
     color: grey !important;
     cursor: pointer;
-    letter-spacing: .015em;
+    
   }
   @media only screen and (min-width: 520px){
     nav ul li a, .about, .projects-link, .contact{

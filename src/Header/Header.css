@@ -27,6 +27,7 @@ header {
   .arrow {
   display: none;
   font-family: "Rubik", sans-serif;
+  cursor: pointer;
 }
 #hand-down {
   color: black;

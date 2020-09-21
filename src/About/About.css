@@ -21,12 +21,12 @@ section {
     display: none
 }
 .App {
-    animation: slideUp .6s ease;
+    animation: slideUp .5s ease;
 }
 @keyframes slideUp {
     0% {
         opacity: .5;
-        transform: scale(1.5);
+        transform: scale(1.15);
     }
     100% {
     }

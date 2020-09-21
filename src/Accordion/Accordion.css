@@ -1,7 +1,7 @@
 .accordion-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -56,6 +56,9 @@
     border: 3px solid black;
     transition: .5s all linear;
 }
+.accordion-title {
+    font-size: 26px;
+}
 .accordion-button:first-child{
     margin-top:0;
 }
@@ -108,6 +111,9 @@
 @media only screen and (min-width: 520px){
     .tech-icon {
         display: initial;
+    }
+    .accordion-title {
+        font-size: 30;
     }
 }
 @media only screen and (min-width:720px){

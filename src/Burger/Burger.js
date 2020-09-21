@@ -25,19 +25,19 @@ class Burger extends Component {
         position: "absolute",
         top: 0,
         left: 0,
-        minHeight: 60,
+        minHeight: 80,
         zIndex: "99",
-        opacity: 0.9,
+        opacity: 1,
         display: "flex",
         alignItems: "center",
         background: "black",
         width: "100%",
         color: "white",
-        fontFamily: "Oswald, sans-serif",
+        fontFamily: "Rubik, sans-serif",
       },
       logo: {
         margin: "0 auto",
-        fontFamily: "Oswald, sans-serif",
+        fontFamily: "Rubik, sans-serif",
         fontSize: 22,
         fontWeight: 700,
       },
@@ -102,7 +102,7 @@ class MenuItem extends Component {
         paddingBottom: 8,
       },
       menuItem: {
-        fontFamily: "Quattrocento, serif",
+        fontFamily: "Karla, sans-serif",
         fontSize: "1.2rem",
         padding: "1rem 0",
         margin: "0 5%",
@@ -141,11 +141,9 @@ class MenuItem extends Component {
             blog
           </a>
         ) : this.props.route === "resume" ? (
-          <a
+          <Link
             className="burgerLink"
-            href="https://ross-scott-macdonald.com/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            to="/resume"
             style={styles.menuItem}
             onMouseEnter={() => {
               this.handleHover();
@@ -156,7 +154,7 @@ class MenuItem extends Component {
             onClick={this.props.onClick}
           >
             resume
-          </a>
+          </Link>
         ) : (
           <Link
             className="burgerLink"
@@ -210,7 +208,7 @@ class Menu extends React.Component {
         zIndex: 2,
       },
       menuList: {
-        paddingTop: "3rem",
+        paddingTop: "4rem",
       },
     };
     return (
@@ -251,7 +249,7 @@ class MenuButton extends React.Component {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-
+        cursor: "pointer",
         padding: "4px",
       },
       line: {
