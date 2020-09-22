@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import resume from './resume91020.pdf';
+import resume from './resume92220.pdf';
 import Nav from '../Nav/Nav';
 import Burger from '../Burger/Burger'
 export default function Resume () {
