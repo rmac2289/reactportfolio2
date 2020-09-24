@@ -50,16 +50,16 @@ export default function Experience() {
             <section className="section2">
               <h4>experience</h4>
               <p>
-                My most significant experience has come through my time 
-                with Bloc/Thinkful. Through a mix of learning
-                modules, building and deploying apps, one-on-one sessions with
-                an experienced mentor, and mock technical interviews, I've
-                learned an incredible amount. I have several applications that
-                I've built from start to finish currently deployed to production
-                - they can be viewed on my home page. Creating a functioning
-                application from scratch is extremely rewarding - I look forward
-                to creating apps independently as well as contributing towards
-                my future development team's success.
+                My most significant experience has come through my time with
+                Bloc/Thinkful. Through a mix of learning modules, building and
+                deploying apps, one-on-one sessions with an experienced mentor,
+                and mock technical interviews, I've learned an incredible
+                amount. I have several applications that I've built from start
+                to finish currently deployed to production - they can be viewed
+                on my home page. Creating a functioning application from scratch
+                is extremely rewarding - I look forward to creating apps
+                independently as well as contributing towards my future
+                development team's success.
                 <br />
                 <br />
                 Through my previous career, I've learned to quickly make

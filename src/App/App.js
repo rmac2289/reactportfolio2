@@ -5,7 +5,7 @@ import HomePage from "../HomePage/HomePage";
 import Contact from "../Contact/Contact";
 import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound/PageNotFound";
-import Resume from '../Resume/Resume';
+import Resume from "../Resume/Resume";
 
 function App() {
   return (

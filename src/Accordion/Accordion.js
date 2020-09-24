@@ -8,7 +8,7 @@ import Parkfinder from "../Projects/Parkfinder";
 import ParkfinderMobile from "../Projects/ParkfinderMobile";
 import "./Accordion.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
@@ -42,7 +42,6 @@ export default function Accordion() {
   const hearsayRef = useRef(null);
   const mealRef = useRef(null);
   const mobileRef = useRef(null);
-  
 
   const parkScroll = () => scrollToRef(parkRef);
   const hearsayScroll = () => scrollToHearsay(hearsayRef);
@@ -116,13 +115,15 @@ export default function Accordion() {
         />
       </div>
       <AnimatePresence>
-      {oneIsOpen && (
-        <motion.div className="accordion-1"
-        key="one"
-        exit={{ y:-100, opacity: 0 }}>
-          <Parkfinder />
-        </motion.div>
-      )}
+        {oneIsOpen && (
+          <motion.div
+            className="accordion-1"
+            key="one"
+            exit={{ y: -100, opacity: 0 }}
+          >
+            <Parkfinder />
+          </motion.div>
+        )}
       </AnimatePresence>
       <div ref={parkRef}></div>
 
@@ -161,14 +162,15 @@ export default function Accordion() {
         />
       </div>
       <AnimatePresence>
-      {twoIsOpen && (
-        <motion.div 
-        key="two"
-        exit={{ y:-100, opacity: 0 }}
-        className="accordion-1">
-          <ParkfinderMobile />
-        </motion.div>
-      )}
+        {twoIsOpen && (
+          <motion.div
+            key="two"
+            exit={{ y: -100, opacity: 0 }}
+            className="accordion-1"
+          >
+            <ParkfinderMobile />
+          </motion.div>
+        )}
       </AnimatePresence>
       <div ref={mobileRef}></div>
 
@@ -201,14 +203,15 @@ export default function Accordion() {
         />
       </div>
       <AnimatePresence>
-      {threeIsOpen && (
-        <motion.div 
-        key="three"
-        exit={{ y:-100, opacity: 0 }}
-        className="accordion-2">
-          <Hearsay />
-        </motion.div>
-      )}
+        {threeIsOpen && (
+          <motion.div
+            key="three"
+            exit={{ y: -100, opacity: 0 }}
+            className="accordion-2"
+          >
+            <Hearsay />
+          </motion.div>
+        )}
       </AnimatePresence>
       <div ref={hearsayRef}></div>
 
@@ -238,14 +241,15 @@ export default function Accordion() {
         />
       </div>
       <AnimatePresence>
-      {fourIsOpen && (
-        <motion.div 
-        key="four"
-        exit={{ y:-100, opacity: 0 }}
-        className="accordion-3">
-          <Meal />
-        </motion.div>
-      )}
+        {fourIsOpen && (
+          <motion.div
+            key="four"
+            exit={{ y: -100, opacity: 0 }}
+            className="accordion-3"
+          >
+            <Meal />
+          </motion.div>
+        )}
       </AnimatePresence>
       <div style={{ visibility: "hidden", marginTop: 150 }} ref={mealRef}>
         hidden
