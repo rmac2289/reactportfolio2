@@ -8,6 +8,7 @@ import Parkfinder from "../Projects/Parkfinder";
 import ParkfinderMobile from "../Projects/ParkfinderMobile";
 import "./Accordion.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, AnimatePresence } from "framer-motion"
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
@@ -41,6 +42,7 @@ export default function Accordion() {
   const hearsayRef = useRef(null);
   const mealRef = useRef(null);
   const mobileRef = useRef(null);
+  
 
   const parkScroll = () => scrollToRef(parkRef);
   const hearsayScroll = () => scrollToHearsay(hearsayRef);
@@ -113,11 +115,15 @@ export default function Accordion() {
           icon={!oneIsOpen ? faChevronDown : faChevronUp}
         />
       </div>
+      <AnimatePresence>
       {oneIsOpen && (
-        <div className="accordion-1">
+        <motion.div className="accordion-1"
+        key="one"
+        exit={{ y:-100, opacity: 0 }}>
           <Parkfinder />
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
       <div ref={parkRef}></div>
 
       <div className="accordion-button" onClick={toggleTwo}>
@@ -154,11 +160,16 @@ export default function Accordion() {
           icon={!twoIsOpen ? faChevronDown : faChevronUp}
         />
       </div>
+      <AnimatePresence>
       {twoIsOpen && (
-        <div className="accordion-1">
+        <motion.div 
+        key="two"
+        exit={{ y:-100, opacity: 0 }}
+        className="accordion-1">
           <ParkfinderMobile />
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
       <div ref={mobileRef}></div>
 
       <div className="accordion-button" onClick={toggleThree}>
@@ -189,11 +200,16 @@ export default function Accordion() {
           icon={!threeIsOpen ? faChevronDown : faChevronUp}
         />
       </div>
+      <AnimatePresence>
       {threeIsOpen && (
-        <div className="accordion-2">
+        <motion.div 
+        key="three"
+        exit={{ y:-100, opacity: 0 }}
+        className="accordion-2">
           <Hearsay />
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
       <div ref={hearsayRef}></div>
 
       <div className="accordion-button" onClick={toggleFour}>
@@ -221,11 +237,16 @@ export default function Accordion() {
           icon={!fourIsOpen ? faChevronDown : faChevronUp}
         />
       </div>
+      <AnimatePresence>
       {fourIsOpen && (
-        <div className="accordion-3">
+        <motion.div 
+        key="four"
+        exit={{ y:-100, opacity: 0 }}
+        className="accordion-3">
           <Meal />
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
       <div style={{ visibility: "hidden", marginTop: 150 }} ref={mealRef}>
         hidden
       </div>
