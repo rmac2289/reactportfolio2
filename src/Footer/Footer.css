@@ -1,13 +1,14 @@
 .footer {
-    background: rgb(64, 75, 62,0.7);
-    height: 52px;
+    background: black;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
-    width: 100%;
+    width: 80px;
     position: fixed;
     bottom: 0;
+    right: 0;
 }
 .footer div p {
     color: white;
@@ -22,7 +23,7 @@
 }
 footer ul {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     list-style: none;
     
 }

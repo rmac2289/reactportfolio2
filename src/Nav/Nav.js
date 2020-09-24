@@ -3,17 +3,20 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
+  const scrollToTop = () => {
+    window.scrollTo({top: 0})
+  }
   return (
     <nav>
       <ul className="links">
         <li>
-          <Link to="/">home</Link>
+          <Link onClick={scrollToTop} to="/">home</Link>
         </li>
         <li>
-          <Link to="/about">about</Link>
+          <Link onClick={scrollToTop} to="/about">about</Link>
         </li>
         <li>
-          <Link to="/experience">experience</Link>
+          <Link onClick={scrollToTop} to="/experience">experience</Link>
         </li>
         <li>
           <a
@@ -27,6 +30,7 @@ export default function Nav() {
         </li>
         <li>
           <Link
+          onClick={scrollToTop}
             id="resume"
             to="/resume"
           >
@@ -34,7 +38,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link className="contact" to="/contact">
+          <Link onClick={scrollToTop} className="contact" to="/contact">
             contact
           </Link>
         </li>

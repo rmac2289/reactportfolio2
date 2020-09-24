@@ -25,9 +25,9 @@ import graphql from "../images/graphql.svg";
 
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
-    border: "1px solid #31708e",
+    border: "1px solid black",
     backgroundColor: theme.palette.common.white,
-    color: "#31708e",
+    color: "black",
     boxShadow: theme.shadows[1],
     fontFamily: "Quattrocento",
     fontSize: 14,
@@ -38,7 +38,7 @@ const LightTooltip = withStyles((theme) => ({
 
 export default function Experience() {
   return (
-    <div className="App">
+    <div className="App experience-page">
       <div id="body">
         <main>
           <Burger id="burger" />
@@ -50,8 +50,8 @@ export default function Experience() {
             <section className="section2">
               <h4>experience</h4>
               <p>
-                My most significant experience in web development is through my
-                apprenticeship with Bloc/Thinkful. Through a mix of learning
+                My most significant experience has come through my time 
+                with Bloc/Thinkful. Through a mix of learning
                 modules, building and deploying apps, one-on-one sessions with
                 an experienced mentor, and mock technical interviews, I've
                 learned an incredible amount. I have several applications that

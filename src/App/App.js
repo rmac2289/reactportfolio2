@@ -5,7 +5,6 @@ import HomePage from "../HomePage/HomePage";
 import Contact from "../Contact/Contact";
 import { Route, Switch } from "react-router-dom";
 import PageNotFound from "../PageNotFound/PageNotFound";
-import Footer from "../Footer/Footer";
 import Resume from '../Resume/Resume';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Route exact path="/resume" component={Resume} />
         <Route component={PageNotFound} />
       </Switch>
-      <Footer />
     </div>
   );
 }
