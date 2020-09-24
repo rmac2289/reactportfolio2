@@ -1,7 +1,7 @@
 .accordion-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -14,6 +14,7 @@
   #badge {
       border-radius: 5px;
   }
+  
 .subtitle-box {
     display: flex;
     flex-direction: column;
@@ -32,10 +33,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
-    border-radius: 5px;
-}
-#badge-link {
-    color: #31708e;
+    background-color: white;
 }
 
 .collapsed {
@@ -44,20 +42,10 @@
 .accordion-button {
     height: 65px;
     font-size: 32px;
-    border-radius: 4px;
     margin-bottom: 0;
-    margin-top: 45px;
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 2.5px 0px rgba(0, 0, 0, 0.06),
-  0 12.3px 7.9px rgba(0, 0, 0, 0.072),
-  0 21.8px 13.4px rgba(0, 0, 0, 0.086),
-  0 50px 30px rgba(0, 0, 0, 0.12);
-    background: #687864;
-    border-left:8px solid #31708e;
-    border-bottom-left-radius: 0;
-    color: #f7f9fb;
+    margin-top: 75px;
+    background: white;
+    color: black;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -65,9 +53,14 @@
     padding-left: 15px;
     padding-right: 15px;
     cursor: pointer;
+    border: 3px solid black;
     transition: .5s all linear;
-    
-
+}
+.accordion-title {
+    font-size: 26px;
+}
+.accordion-button:first-child{
+    margin-top:0;
 }
 .tech-icon {
     margin-right: 10px;
@@ -80,11 +73,12 @@
     align-self: center;
 }
 .accordion-button:hover {
-    background-color: #404b3e;
+    background-color: rgb(85, 84, 84);
+    color: white;
 }
 
 .accordion-icon{
-    color: #31708e;
+    color: white;
     margin-right: 10px;
 }
 .accordion-sub-title {
@@ -93,11 +87,9 @@
     align-items: center;
     margin-top: 0;
     width: 100%;
-    background: #f7f9fb;
-    border-left: 8px solid #31708e;
+    background: black;
+    border: 3px solid black;
     cursor: pointer;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -111,7 +103,7 @@
     padding: 2%;
     margin-bottom: 0;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 .btn-link:hover, .btn:hover {
     text-decoration: none !important;
@@ -119,6 +111,9 @@
 @media only screen and (min-width: 520px){
     .tech-icon {
         display: initial;
+    }
+    .accordion-title {
+        font-size: 30;
     }
 }
 @media only screen and (min-width:720px){
@@ -128,13 +123,13 @@
     #featured-span {
         flex-direction: row;
         align-items: center;
-        background-color: #31708ecc;
+        background-color: white;
         margin-top: 10px;
         padding: 1%;
 
     }
     #badge-link {
-        color: white;
+        color: black;
     }
     #badge {
         margin-right:10px

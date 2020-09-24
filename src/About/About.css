@@ -1,14 +1,14 @@
 section h4 {
-    color: #12343b;
+    color: blue;
     text-align: left;
     font-size: 50px;
     padding-bottom: 15px;
-    letter-spacing: 2.5px;
 }
 .beforesection1 {
     padding-top: 20px;
     padding-bottom: 150px;
 }
+
 section {
     min-height: 200px;
     padding: 3% 0;
@@ -21,14 +21,14 @@ section {
     display: none
 }
 .App {
-    animation: fadeIn .75s;
+    animation: slideUp .5s ease;
 }
-@keyframes fadeIn {
+@keyframes slideUp {
     0% {
-        opacity: 0.1
+        opacity: .5;
+        transform:  scale(1.15)
     }
     100% {
-        opacity: 1
     }
 }
 
@@ -57,7 +57,7 @@ section {
     font-weight: 800;
 }
 .section1, .section2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .techlist {
     display: grid;
@@ -72,7 +72,7 @@ section {
     width: 90px;
 }
 p {
-    font-family: "Quattrocento", serif;
+    font-family: "Karla", sans-serif;
     padding: 20px;
     line-height: 1.5em;
 }
@@ -102,6 +102,12 @@ section {
         position: fixed;
         left: 0;
     }
+    .about-page {
+        background: url('../images/smallMountains.png');
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     #portrait {
         width: 300px;
     }
@@ -116,13 +122,12 @@ section {
         padding-left: 75px;
         display: flex;
         flex-direction: column;
+        padding-bottom: px;
     }
     .section1 {
         align-self: flex-end;
         width: 75%;
         margin: 20px auto 0 auto;
-        
-        
     }
     .section2 {
         width: 65%;
