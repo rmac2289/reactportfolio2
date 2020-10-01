@@ -58,7 +58,7 @@ export default function Experience() {
             className="beforesection1"
           >
             <section className="section2">
-              <h4>experience</h4>
+              <h4 style={{ paddingLeft: 20 }}>experience</h4>
               <p>
                 My most significant experience has come through my time with
                 Bloc/Thinkful. Through a mix of learning modules, building and
@@ -80,9 +80,9 @@ export default function Experience() {
                 ready to put the same efforts that led to those achievements
                 into a career in web development.
               </p>
-              <h4>tech I've worked with</h4>
+              <h4 style={{ paddingLeft: 20 }}>tech I've worked with</h4>
               <ul className="techlist">{techList}</ul>
-              <h4>tech I'm learning</h4>
+              <h4 style={{ paddingLeft: 20 }}>tech I'm learning</h4>
               <ul className="techlist">{techLearningList}</ul>
             </section>
           </div>

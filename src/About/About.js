@@ -18,7 +18,7 @@ export default function About() {
 
             <div className="beforesection1">
               <section className="section1">
-                <h4>about me</h4>
+                <h4 style={{ paddingLeft: 20 }}>about me</h4>
                 <p>
                   I'm a native East Coaster, ex-Midwesterner, and current West
                   Coaster residing in the SF Bay Area. I've recently finished an
