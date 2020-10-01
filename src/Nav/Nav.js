@@ -1,19 +1,24 @@
 import React from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export default function Nav() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0 });
   };
+  const history = useHistory();
+  console.log(history.location.pathname);
+
   return (
     <nav>
       <ul className="links">
-        <li>
-          <Link onClick={scrollToTop} to="/">
-            home
-          </Link>
-        </li>
+        {history.location.pathname !== "/" && (
+          <li>
+            <Link onClick={scrollToTop} to="/">
+              home
+            </Link>
+          </li>
+        )}
         <li>
           <Link onClick={scrollToTop} to="/about">
             about

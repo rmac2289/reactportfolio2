@@ -1,14 +1,11 @@
-.tech-list {
-
-}
 .tech-list-icon {
         display: initial;
         width: 65%;
 }
+
 .experience-page {
         background: url('../images/smallMountains.png');
         background-position: bottom;
         background-size: contain;
         background-repeat: no-repeat;
-        
 }

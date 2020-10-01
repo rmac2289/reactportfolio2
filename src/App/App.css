@@ -1,11 +1,10 @@
-
 #home {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  background: url('../images/mountainNoText.png'), url('./mountainbottom.png');
+  background: url("../images/mountainNoText.png"), url("./mountainbottom.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top, bottom;
@@ -18,17 +17,16 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
-
 }
 main {
   padding-top: 50px;
 }
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
 .section5 {
@@ -44,4 +42,3 @@ main {
     margin-right: auto;
   }
 }
-
