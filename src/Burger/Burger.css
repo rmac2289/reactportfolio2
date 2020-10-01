@@ -1,5 +1,3 @@
-
-
 @keyframes appear {
   0% {
     opacity: 0;
@@ -9,7 +7,7 @@
   }
 }
 .burgerDiv {
-    display: flex;
+  display: flex;
 }
 @keyframes slideIn {
   0% {
@@ -29,13 +27,16 @@
   }
 }
 .burgerLink {
-    text-decoration: none;
+  text-decoration: none;
+}
+.burgerLink:hover {
+  text-decoration: none;
 }
 #bullhorn {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-@media only screen and (min-width: 720px){
-    .burgerDiv {
-        display: none;
-    }
+@media only screen and (min-width: 720px) {
+  .burgerDiv {
+    display: none;
+  }
 }

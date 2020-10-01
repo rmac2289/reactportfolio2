@@ -4,12 +4,9 @@ import "./Burger.css";
 
 // hamburger nav component for screens smaller than 520px in width //
 class Burger extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuOpen: false,
-    };
-  }
+  state = {
+    menuOpen: false,
+  };
 
   handleMenuClick() {
     this.setState({ menuOpen: !this.state.menuOpen });
@@ -82,12 +79,9 @@ class Burger extends Component {
 }
 
 class MenuItem extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false,
-    };
-  }
+  state = {
+    hover: false,
+  };
 
   handleHover = () => {
     this.setState({ hover: !this.state.hover });
@@ -178,12 +172,9 @@ class MenuItem extends Component {
 }
 
 class Menu extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: this.props.open ? this.props.open : false,
-    };
-  }
+  state = {
+    open: this.props.open ? this.props.open : false,
+  };
 
   UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.open !== this.state.open) {
@@ -222,13 +213,10 @@ class Menu extends React.Component {
 }
 
 class MenuButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: this.props.open ? this.props.open : false,
-      color: this.props.color ? this.props.color : "black",
-    };
-  }
+  state = {
+    open: this.props.open ? this.props.open : false,
+    color: this.props.color ? this.props.color : "black",
+  };
 
   UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.open !== this.state.open) {
