@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
+  
   return (
     <header className="banner" role="banner">
       <div className="header-box">
