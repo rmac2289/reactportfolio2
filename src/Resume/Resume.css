@@ -7,7 +7,13 @@
     background-repeat: no-repeat;
     background-size:contain;
     background-position: bottom;
+    animation: 1.5s fade ease;
 }
+@keyframes fade {
+    0% {
+      opacity: 0
+    }
+  }
 iframe {
     height: 900px;
     width: 100%;

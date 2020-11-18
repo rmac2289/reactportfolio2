@@ -9,7 +9,13 @@
         background-position: bottom;
         background-size: contain;
         background-repeat: no-repeat;
+        animation: 1.5s fade ease;
 }
+@keyframes fade {
+    0% {
+      opacity: 0
+    }
+  }
 #contactSection {
     padding-top: 50px;
 }

@@ -23,14 +23,7 @@ section {
 .App {
     animation: slideUp .5s ease;
 }
-@keyframes slideUp {
-    0% {
-        opacity: .5;
-        transform:  scale(1.15)
-    }
-    100% {
-    }
-}
+
 
 #express {
     font-family: "helvetica neue";
@@ -78,8 +71,6 @@ p {
 }
 @media only screen and (min-width: 420px){
 
-
-
 section {
     margin: 25px 100px 25px 100px;
  }   
@@ -107,7 +98,13 @@ section {
         background-position: bottom;
         background-size: contain;
         background-repeat: no-repeat;
+        animation: 1.5s fade ease;
     }
+    @keyframes fade {
+        0% {
+          opacity: 0
+        }
+      }
     #portrait {
         width: 300px;
     }
