@@ -82,8 +82,8 @@ export default function Experience() {
               </p>
               <h4 style={{ paddingLeft: 20 }}>tech I've worked with</h4>
               <ul className="techlist">{techList}</ul>
-              <h4 style={{ paddingLeft: 20 }}>tech I'm learning</h4>
-              <ul className="techlist">{techLearningList}</ul>
+              {/*<h4 style={{ paddingLeft: 20 }}>tech I'm working on working with</h4>
+              <ul className="techlist">{techLearningList}</ul> */}
             </section>
           </div>
         </main>

@@ -9,7 +9,7 @@
   background-size: contain;
   background-position: top, bottom;
   padding-bottom: 100px;
-  animation: 2s fadeIn linear;
+  animation: 1.5s fadeIn ease;
 }
 @keyframes fadeIn {
   0% {

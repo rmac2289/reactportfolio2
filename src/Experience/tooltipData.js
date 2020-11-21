@@ -14,6 +14,7 @@ import cpanelIcon from "../images/cpanel96px.png";
 import angularIcon from "../images/angular96px.png";
 import pythonIcon from "../images/python96px.png";
 import graphql from "../images/graphql.svg";
+import herokuIcon from '../images/heroku.png';
 
 export const tooltipData = [
   {
@@ -30,6 +31,16 @@ export const tooltipData = [
     title: "JavaScript",
     src: jsIcon,
     alt: "JavaScript",
+  },
+  {
+    title: "Python",
+    src: pythonIcon,
+    alt: "Python",
+  },
+  {
+    title: "GraphQL",
+    src: graphql,
+    alt: "GraphQL",
   },
   {
     title: "HTML5",
@@ -72,6 +83,11 @@ export const tooltipData = [
     alt: "Terminal",
   },
   {
+    title: "Heroku",
+    src: herokuIcon,
+    alt: "Heroku",
+  },
+  {
     title: "Itunes App Store",
     src: appStoreIcon,
     alt: "Itunes App Store",
@@ -85,23 +101,15 @@ export const tooltipData = [
     title: "Wordpress",
     src: wordpressIcon,
     alt: "Wordpress",
-  },
+  }
 ];
 
 export const tooltipLearningData = [
-  {
-    title: "Python",
-    src: pythonIcon,
-    alt: "Python",
-  },
+  
   {
     title: "Angular",
     src: angularIcon,
     alt: "Angular",
   },
-  {
-    title: "GraphQL",
-    src: graphql,
-    alt: "GraphQL",
-  },
+  
 ];

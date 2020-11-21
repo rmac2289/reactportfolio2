@@ -14,18 +14,7 @@ nav {
 }
 @keyframes nav {
   0% {
-    transform: translateY(100px) scaleX(.85);
-    opacity: 0;
-    background: white;
-  }
-  25% {
-    background: rgb(218, 216, 216)
-  }
-  50% {
-    background: rgb(163, 162, 162)
-  }
-  75% {
-    background: rgb(102, 101, 101)
+    transform: translateY(-50px) scaleX(1.05);
   }
 }
 
