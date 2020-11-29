@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
-  
   return (
     <header className="banner" role="banner">
       <div className="header-box">
@@ -19,6 +18,7 @@ export default function Header() {
         >
           <h4
             className="latest-work"
+            on
             onClick={() => window.scrollTo({ top: 1100, behavior: "smooth" })}
           >
             my latest work

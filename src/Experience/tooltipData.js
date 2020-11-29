@@ -14,7 +14,7 @@ import cpanelIcon from "../images/cpanel96px.png";
 import angularIcon from "../images/angular96px.png";
 import pythonIcon from "../images/python96px.png";
 import graphql from "../images/graphql.svg";
-import herokuIcon from '../images/heroku.png';
+import herokuIcon from "../images/heroku.png";
 
 export const tooltipData = [
   {
@@ -93,23 +93,16 @@ export const tooltipData = [
     alt: "Itunes App Store",
   },
   {
-    title: "Cpanel",
-    src: cpanelIcon,
-    alt: "Cpanel",
-  },
-  {
     title: "Wordpress",
     src: wordpressIcon,
     alt: "Wordpress",
-  }
+  },
 ];
 
 export const tooltipLearningData = [
-  
   {
     title: "Angular",
     src: angularIcon,
     alt: "Angular",
   },
-  
 ];

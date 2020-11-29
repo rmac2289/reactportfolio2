@@ -12,9 +12,12 @@ nav {
   box-shadow: 0 8px 4px -6px rgb(0, 0, 0, 0.4);
   animation: nav 1s ease;
 }
+.scrolling {
+  background: rgba(0, 0, 0, 0.7);
+}
 @keyframes nav {
   0% {
-    transform: translateY(-50px) scaleX(1.05);
+    transform: translateY(-50px);
   }
 }
 

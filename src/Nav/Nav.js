@@ -7,7 +7,6 @@ export default function Nav() {
     window.scrollTo({ top: 0 });
   };
   const history = useHistory();
-  console.log(history.location.pathname);
 
   return (
     <nav>

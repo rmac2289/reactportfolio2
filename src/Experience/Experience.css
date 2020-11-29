@@ -1,10 +1,10 @@
 .tech-list-icon {
   display: initial;
   width: 65%;
-  transition: .25s all linear
+  transition: 0.25s all linear;
 }
 .tech-list-icon:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .experience-page {
@@ -16,6 +16,6 @@
 }
 @keyframes fade {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 }
